@@ -1,0 +1,52 @@
+{
+  "id": "memory-qdrant",
+  "name": "Memory Qdrant",
+  "version": "1.0.0",
+  "description": "团队向量记忆技能 - Qdrant + Ollama bge-m3",
+  "author": "TeamClaw",
+  "license": "MIT",
+  "config": {
+    "qdrantUrl": {
+      "type": "string",
+      "default": "http://localhost:6333",
+      "description": "Qdrant 服务器地址"
+    },
+    "ollamaUrl": {
+      "type": "string",
+      "default": "http://localhost:11434",
+      "description": "Ollama 服务器地址"
+    },
+    "embeddingModel": {
+      "type": "string",
+      "default": "bge-m3",
+      "description": "嵌入模型名称"
+    },
+    "autoCapture": {
+      "type": "boolean",
+      "default": false,
+      "description": "自动捕获对话内容"
+    },
+    "autoRecall": {
+      "type": "boolean",
+      "default": true,
+      "description": "自动检索相关记忆"
+    },
+    "collections": {
+      "type": "object",
+      "default": {
+        "memory": "team_memory_v3",
+        "code": "code_index_v3",
+        "decision": "decision_log_v3"
+      },
+      "description": "Qdrant Collections 映射"
+    }
+  },
+  "tools": [
+    "memory_store",
+    "memory_search",
+    "memory_forget"
+  ],
+  "hooks": {
+    "beforeAgentTurn": "autoRecall"
+  }
+}

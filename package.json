@@ -1,0 +1,41 @@
+{
+  "name": "openclaw-memory-qdrant",
+  "version": "1.0.0",
+  "description": "OpenClaw Memory Skill with Qdrant + Ollama bge-m3 (1024 维向量)",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "node tests/test.js",
+    "lint": "eslint ."
+  },
+  "keywords": [
+    "openclaw",
+    "skill",
+    "memory",
+    "qdrant",
+    "ollama",
+    "vector-database"
+  ],
+  "author": "TeamClaw",
+  "license": "MIT",
+  "dependencies": {
+    "undici": "^6.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.57.0"
+  },
+  "engines": {
+    "node": ">=18.17.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-org/openclaw-memory-qdrant.git"
+  },
+  "files": [
+    "index.js",
+    "tools/",
+    "lib/",
+    "SKILL.md",
+    "README.md"
+  ]
+}
