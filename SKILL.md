@@ -114,8 +114,9 @@ npm install
 
 ## 链接
 
-- GitHub: https://github.com/your-org/openclaw-memory-qdrant
-- 问题反馈：https://github.com/your-org/openclaw-memory-qdrant/issues
+- **GitHub**: https://github.com/hbmask/openclaw-memory-qdrant
+- **Release v1.0.0**: https://github.com/hbmask/openclaw-memory-qdrant/releases/tag/v1.0.0
+- **问题反馈**: https://github.com/hbmask/openclaw-memory-qdrant/issues
 
 ---
 
